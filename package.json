@@ -6,6 +6,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "rollup --watch --config rollup.config.js",
     "build": "rollup --config rollup.config.js",
     "lint": "eslint \"src/**/*.ts*\"",
@@ -19,6 +20,7 @@
     "@babel/core": "^7.22.1",
     "@ts-stack/markdown": "^1.4.0",
     "device-detector-js": "^3.0.3",
+    "husky": "^9.0.11",
     "lodash": "^4.17.21",
     "prettier": "^3.1.0",
     "socket.io-client": "^4.6.2",
@@ -48,7 +50,6 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-solid": "0.12.0",
-    "husky": "^8.0.0",
     "postcss": "8.4.21",
     "react": "18.2.0",
     "rollup": "3.23.0",
